@@ -31,6 +31,12 @@ XF Client - W10M UWP App (ready), and Android + iOS "app templates" (not needed 
 Client - Mono Android App
 
 
+## Referencies
+
+- https://www.c-sharpcorner.com/article/xamarin-forms-controlling-your-pc-with-your-phonesusing-tcpip-protocol/
+- https://www.c-sharpcorner.com/article/xamarin-forms-controlling-your-pc-with-your-phonesusing-tcpip-protocol2/
+
+
 ## .
 
 AS IS. No support. RnD only.
