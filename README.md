@@ -1,49 +1,38 @@
-# ProjectRome (codename)
+# ProjectRome
 
-This is my fork of some old sweet "TCP-IP-Server-Sample" project.
-My goal is to make alternative of famous (and completely stopped by) MS "ProjectRome".
+## About this strange "collection"
 
-## Screenshots
+This is only my experimentations with "Microsoft Project Rome":
 
-![shot 1](Images/ProjectRome.png)
+1 AltProjectRome My simplest "telepresence" app (switch off server/remote screenshot, etc.);
 
+2 RomeCastRemote (Remote podcasts controlling);
 
-## Steps of my RnD plan 
+3 MediaExperience (Remote media clips controlling);
 
-Step 1. TCP IP "service message bus"
+4 Nearby-Sharing-Windows (ProjectRome's Android adaptaion).
 
-Step 2. OneDrive / Microsoft Graph "service bus"
+## Status
 
-Step 3 (optional). Hybrid methods of "near fields" / "cloud mode" (dynamic switch between SignalR / Firebase DB / MEGA.NZ / maybe something else)))
-
-## Current scenario
-
-The purpose of this project (step 1) is to develop Android based application which will serve the Administrator with on demand remote surveillance and controlling of work stations of work place. This project will involve the development of two applications, one will run on work stations and the other one will run on the mobile phone of the Administrator. 
-Both these applications will be connected through Wi-Fi. The implementation of such mechanism will make the Administrator not only to have an eye on the activities of users but also will make him able to remotely control the specific work station(s).
- 
-
-## Solution structure 
-
-Server - .NET 4.8 Console App 
-
-XF Client - W10M UWP App (ready), and Android + iOS "app templates" (not needed to me)
-
-Client - Mono Android App
-
+- R.E. approx. 15-20 % !
+- Not completed, yea :(
+- Partially compatible with Android and W10M :)
 
 ## Referencies
 
-- https://www.c-sharpcorner.com/article/xamarin-forms-controlling-your-pc-with-your-phonesusing-tcpip-protocol/
-- https://www.c-sharpcorner.com/article/xamarin-forms-controlling-your-pc-with-your-phonesusing-tcpip-protocol2/
+1 https://www.c-sharpcorner.com/article/xamarin-forms-controlling-your-pc-with-your-phonesusing-tcpip-protocol/
 
+  https://www.c-sharpcorner.com/article/xamarin-forms-controlling-your-pc-with-your-phonesusing-tcpip-protocol2/
 
-## .
+2 https://github.com/microsoft/project-rome
 
-AS IS. No support. RnD only.
+3  https://github.com/johnthiriet/MediaExperience
 
+4 Nearby-Sharing-Windows
 
 ## ..
 
-[m][e] 2022
+AS IS. No support. For ed. purposes only. DIY
 
-
+## .
+- m e 2 0 2 2
