@@ -12,7 +12,9 @@ This is only my experimentations with "Microsoft Project Rome":
 
 3 MediaExperience (Remote media clips controlling);
 
-4 Nearby-Sharing-Windows (ProjectRome's Android adaptaion).
+4 Nearby-Sharing-Windows (ProjectRome's Android adaptaion);
+
+5 ProjectRet (Project REbooT)).
 
 
 ## Status
@@ -33,6 +35,10 @@ This is only my experimentations with "Microsoft Project Rome":
 3 https://github.com/johnthiriet/MediaExperience/ MediaExperience
 
 4 https://github.com/ShortDevelopment/Nearby-Sharing-Windows/ Nearby-Sharing-Windows
+
+5a https://github.com/gaojunxuan/ProjectRet.Desktop Shutdown your computer remotely even if two computers are not on the same local network
+
+5b https://github.com/gaojunxuan/ProjectRet.UWP Project RET Mobile device app-companion
 
 
 ## ..
