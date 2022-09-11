@@ -121,7 +121,7 @@ namespace ProjectRet.UWP.ViewModels
         private RelayCommand<string> _deleteCommand;
 
         /// <summary>
-        /// Gets the DeleteCommand.
+        /// Gets the Delete Command.
         /// </summary>
         public RelayCommand<string> DeleteCommand
         {
@@ -140,7 +140,7 @@ namespace ProjectRet.UWP.ViewModels
         private RelayCommand<DeviceDetails> _shutdownCommand;
 
         /// <summary>
-        /// Gets the ShutdownCommand.
+        /// Gets the Shutdown Command.
         /// </summary>
         public RelayCommand<DeviceDetails> ShutdownCommand
         {
@@ -172,7 +172,7 @@ namespace ProjectRet.UWP.ViewModels
         private RelayCommand<DeviceDetails> _rebootCommand;
 
         /// <summary>
-        /// Gets the ShutdownCommand.
+        /// Gets the Reboot Command.
         /// </summary>
         public RelayCommand<DeviceDetails> RebootCommand
         {

@@ -24,9 +24,11 @@ namespace ProjectRet.UWP.Helpers
                 default:return DeviceType.Unknown;
             }
         }
+
         public static string GetStatusMessage(RemoteSystemStatus status,string uniqueId)
         {
-            if(status==RemoteSystemStatus.Available)
+            //TODO / TEMP : fix status (more statuses needed)
+            if(1==1)//(status==RemoteSystemStatus.Available)
             {
                 if (DatabaseHelper.Exists(uniqueId))
                     return "Available".GetLocalized();
@@ -38,6 +40,8 @@ namespace ProjectRet.UWP.Helpers
                 return "Unavailable".GetLocalized();
             }
         }
+
+
         public static async Task<RemoteLaunchUriStatus> ExecuteCommand(RemoteSystem remoteSystem,Command comm)
         {
             if (remoteSystem != null)

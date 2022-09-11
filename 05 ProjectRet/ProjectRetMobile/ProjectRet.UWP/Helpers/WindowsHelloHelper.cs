@@ -37,7 +37,21 @@ namespace ProjectRet.UWP.Helpers
         {
             if(await WindowsHelloAvailableCheckAsync())
             {
-                UserConsentVerificationResult consentResult = await UserConsentVerifier.RequestVerificationAsync("");
+                UserConsentVerificationResult consentResult = new UserConsentVerificationResult();
+
+                try
+                {
+                    consentResult = await UserConsentVerifier.RequestVerificationAsync("Please verify");
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine("[ex] Exception : " + ex.Message);
+                    await new MessageDialog("Verification failed (Device was not unlocked?)", "Failed").ShowAsync();
+
+                    // TEMP
+                    return false;// true;
+                }
+
                 if (consentResult != UserConsentVerificationResult.Verified)
                 {
                     return false;

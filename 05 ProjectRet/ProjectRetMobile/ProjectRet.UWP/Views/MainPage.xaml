@@ -96,7 +96,11 @@
                                         <Button.Content>
                                             <StackPanel Orientation="Horizontal">
                                                 <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE7E8;" />
-                                                <TextBlock x:Uid="ShutdownBtn" Text="Shutdown" Margin="4,0,0,0"></TextBlock>
+
+                                                <!-- Text="Shutdown" -->
+                                                    <TextBlock x:Uid="ShutdownBtn" 
+                                                          
+                                                           Margin="4,0,0,0"></TextBlock>
                                             </StackPanel>
                                         </Button.Content>
                                     </Button>
@@ -104,7 +108,9 @@
                                         <Button.Content>
                                             <StackPanel Orientation="Horizontal">
                                                 <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE72C;" />
-                                                <TextBlock x:Uid="RestartBtn" Text="Restart" Margin="4,0,0,0"></TextBlock>
+
+                                                <!--Text="Restart"-->
+                                                <TextBlock x:Uid="RestartBtn" Margin="4,0,0,0"></TextBlock>
                                             </StackPanel>
                                         </Button.Content>
                                     </Button>
