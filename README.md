@@ -1,49 +1,50 @@
-# ProjectRome
+# ProjectHome (Alt.ProjectHome codename)
 
-My Project Rome RnD
+Project Home is planned as some cross-platform project (Desktop + UWP or Xamarin Forms... idk). 
 
-## About this strange "collection"
+With Project Home, you can shutdown your computer remotely even if your two devices (computer/mobile phone/notebuuk/laptop, etc.) are not on the same local network. ;)
 
-This is only my experimentations with "Microsoft Project Rome":
+My ProjectHome solution is based on Project RET.
 
-1 AltProjectRome My simplest "telepresence" app (switch off server/remote screenshot, etc.);
+## What is RET?
 
-2 RomeCastRemote (Remote podcasts controlling);
-
-3 MediaExperience (Remote media clips controlling);
-
-4 Nearby-Sharing-Windows (ProjectRome's Android adaptaion);
-
-5 ProjectRet (Project REbooT)).
+RET refers to **Re**mote Shu**t**down. Or [Re]mote reboo[T] :)
 
 
-## Status
+## Implementation
 
-- R.E./Dev. approx. 15-20 % !
-- Not completed, yea :(
-- Partially compatible with Android and W10M :)
+We used the APIs of Project Rome provided by Microsoft so that we could reach any devices remotely as long as these devices signed into the same Microsoft Account. The APIs in Project Rome enabled the cross-platform application engagement, and they are easy to call on any platform.
+
+However, to achieve remote control, we still need a client on the controlled device. The client registered a URL protocol which accept specified data as parameters and allows remote calls. Correspondingly, the client on the controller side will send the URL launching request through the Project Rome APIs and provide some keys for authentication.
+
+
+## Security
+
+Since the client will expose a URL protocol publicly, there might be some security risks, we use a security key and device GUID as credentials to prevent your devices from attack.
+
+As for the controller side, we used Windows Hello for authentication. Before enter the controller console, user must enter there PIN or login with fingerprint or facial recognition :
+![Screenshot 38](Images/shot1.png)
+
+
+## User guide
+
+### Install client on controlled side
+
+Install the Project Ret client.
+
+You can see a 8-character key on the "popup" window.
+
+### Install and configure the controller client
+
+Find the device name of the device you want to control and tap the "Setup" button.
+
+Enter the 8-character key (case sensitive).
 
 
 ## Referencies
 
-1a https://www.c-sharpcorner.com/article/xamarin-forms-controlling-your-pc-with-your-phonesusing-tcpip-protocol/
+https://github.com/gaojunxuan/ProjectRet.Desktop
 
-1b https://www.c-sharpcorner.com/article/xamarin-forms-controlling-your-pc-with-your-phonesusing-tcpip-protocol2/
+https://github.com/gaojunxuan/ProjectRet.UWP
 
-2 https://github.com/microsoft/project-rome/ Microsoft Project Rome
-
-3 https://github.com/johnthiriet/MediaExperience/ MediaExperience
-
-4 https://github.com/ShortDevelopment/Nearby-Sharing-Windows/ Nearby-Sharing-Windows
-
-5a https://github.com/gaojunxuan/ProjectRet.Desktop Shutdown your computer remotely even if two computers are not on the same local network
-
-5b https://github.com/gaojunxuan/ProjectRet.UWP Project RET Mobile device app-companion
-
-
-## ..
-
-AS IS. No support. For ed. purposes only. DIY
-
-## .
-- m e 2 0 2 2
+https://github.com/microsoft/ProjectHome
