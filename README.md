@@ -28,17 +28,20 @@ As for the controller side, we used Windows Hello for authentication. Before ent
 
 ## User guide
 
-### Install client on controlled side
+### Install ProjectHomeRemote(Desktop) on controlled side
 
-Install the Project Ret client.
+Install the ProjectHomeRemote (Experimental UWP version, but W10M-incompatible) or ProjectHomeRemoteDesktop (x86/x64)  client.
 
 You can see a 8-character key on the "popup" window.
 
-### Install and configure the controller client
+### Install controller client
 
-Find the device name of the device you want to control and tap the "Setup" button.
+Install ProjectRome on your PC or WinPhone and configure this controller client:
 
-Enter the 8-character key (case sensitive).
+- Scan the devices (your "remote systems").
+- Find the device name of the device you want to control and tap the "Setup" button.
+
+Enter the 8-character key (case sensitive) for better connection. :)
 
 
 ## Referencies
