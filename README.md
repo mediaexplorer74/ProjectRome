@@ -4,11 +4,11 @@ Project Home is planned as some cross-platform project (Desktop + UWP or Xamarin
 
 With Project Home, you can shutdown your computer remotely even if your two devices (computer/mobile phone/notebuuk/laptop, etc.) are not on the same local network. ;)
 
-My ProjectHome solution is based on Project RET.
+My ProjectRome experimental solution is based on Project RET.
 
 ## What is RET?
 
-RET refers to **Re**mote Shu**t**down. Or [Re]mote reboo[T] :)
+RET refers to **re**mote shu**t**down. Or [RE]mote reboo[T] :)
 
 
 ## Implementation
